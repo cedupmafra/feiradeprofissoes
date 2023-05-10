@@ -1,71 +1,436 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./assets/img/logo.ico" type="image/x-icon">
     <link rel="stylesheet" href="./assets/styles/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
     <title>CEDUP</title>
+
+    <style>
+        .card {
+            background-color: #f8f8f8;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+            margin: 10px;
+            padding: 20px;
+            width: 300px;
+        }
+
+        .card-container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            height: auto;
+            padding: 0 2rem;
+            flex-wrap: wrap;
+            background-color: #88f3ae;
+
+        }
+    </style>
 </head>
+
 <body>
     <header>
-    <!-- Menu -->
+        <!-- Menu -->
 
     </header>
     <section>
-    <!-- Home -->
+        <!-- Home -->
 
     </section>
     <section id="sobre-cedup" class="aboutCedup-container">
-    <!-- Sobre CEDUP-->
+        <!-- Sobre CEDUP-->
         <h1 class="title">HISTÓRIA DO CEDUP</h1>
         <article>
             <figure>
                 <img decoding="async" loading="lazy" src="./assets/img/cedup.jpg" alt="">
                 <figcaption>
-                    "Nova sede do CEDUP, localizada no Bairro do Vila Nova, Mafra-SC."  
+                    "Nova sede do CEDUP, localizada no Bairro do Vila Nova, Mafra-SC."
                 </figcaption>
             </figure>
             <dic class="aboutCedup-content">
-                <p>O Centro de Educação Profissional (CEDUP) tem como gestor escolar o Professor Luiz Henrique Arten, a Instituição foi fundada em janeiro de 2004, passou a integrar o Sistema de Ensino Estadual de Santa Catarina pelo decreto 1.349 de 21/01/2004.</p>
-                <p>No ano de 2004 surgiu à necessidade de satisfazer a comunidade, havendo uma procura significativa por curso na área da saúde, com isso iniciou a primeira turma do curso de Técnico em Enfermagem. Por solicitação da Empresa Souza Cruz foi iniciado o curso de Técnico em Química e Segurança do Trabalho que teve total apoio da referida empresa.</p>
-                <p>Neste período atendendo a necessidade regional, o CEDUP abre cursos Técnicos voltados para a área de Gestão e Negócios, o Técnico em Secretariado e Recursos Humanos. Com a preocupação de ajustar as Indústrias à questão ambiental, o CEDUP passou a oferecer na época o Curso Técnico em Meio Ambiente.</p>
-                <p>No ano de 2007 o conselho Estadual autoriza os cursos de especialização em Gestão de Negócios na Internet, Enfermagem no Trabalho, Dentística Restauradora e Recrutamento e Seleção de Pessoas. Em busca de cursos novos para a comunidade damos início ao Curso Técnico em Podologia. Neste mesmo ano inauguramos os laboratórios de Técnico em Higiene Dental e Podologia.</p>
-                <p>O Centro de Educação Profissional Prof. Lycurgo Aleixo Nora, e uma Escola Técnica ao qual tem como missão promover a formação de profissionais conscientes, bem como capacitá-los para o mundo do trabalho. E nossa visão é ser um centro de referência em educação profissional de qualidade, onde valores sejam respeitados. Como conhecimento, ética, Cidadania, cooperativismo e profissionalismo dos alunos que la estudam.</p>
-                <p>Hoje CEDUP conta com cursos Técnico de nível pós médio no eixo Tecnológico, Ambiente e Saúde, eixo de Gestão e Negócios e Segurança. Em 2016 o CEDUP começou com turmas do Mediotec, programa do Governo Federal hoje chamado Novos Caminhos onde tem com proposta o fortalecimento das políticas de educação profissional mediante a convergência das ações de fomento e execução, de produção pedagógica e de assistência técnica.</p>
-                <p>O CEDUP Professor Lycurgo Aleixo Nora recebeu está denominação através da Lei no 17.532 de junho de 2018. Iniciou suas atividades na sede nova no Bairro Vila Nova, a obra foi realizada com recursos do Governo Federal, através do MEC, com contrapartida do Governo do Estado, que irá beneficiar toda a população do Planalto Norte catarinense, principalmente os cidadãos do município de Mafra. É reconhecido pelo Conselho Estadual da Educação de Santa Catarina e seus cursos tem validade Nacional. </p>
+                <p>O Centro de Educação Profissional (CEDUP) tem como gestor escolar o Professor Luiz Henrique Arten, a
+                    Instituição foi fundada em janeiro de 2004, passou a integrar o Sistema de Ensino Estadual de Santa
+                    Catarina pelo decreto 1.349 de 21/01/2004.</p>
+                <p>No ano de 2004 surgiu à necessidade de satisfazer a comunidade, havendo uma procura significativa por
+                    curso na área da saúde, com isso iniciou a primeira turma do curso de Técnico em Enfermagem. Por
+                    solicitação da Empresa Souza Cruz foi iniciado o curso de Técnico em Química e Segurança do Trabalho
+                    que teve total apoio da referida empresa.</p>
+                <p>Neste período atendendo a necessidade regional, o CEDUP abre cursos Técnicos voltados para a área de
+                    Gestão e Negócios, o Técnico em Secretariado e Recursos Humanos. Com a preocupação de ajustar as
+                    Indústrias à questão ambiental, o CEDUP passou a oferecer na época o Curso Técnico em Meio Ambiente.
+                </p>
+                <p>No ano de 2007 o conselho Estadual autoriza os cursos de especialização em Gestão de Negócios na
+                    Internet, Enfermagem no Trabalho, Dentística Restauradora e Recrutamento e Seleção de Pessoas. Em
+                    busca de cursos novos para a comunidade damos início ao Curso Técnico em Podologia. Neste mesmo ano
+                    inauguramos os laboratórios de Técnico em Higiene Dental e Podologia.</p>
+                <p>O Centro de Educação Profissional Prof. Lycurgo Aleixo Nora, e uma Escola Técnica ao qual tem como
+                    missão promover a formação de profissionais conscientes, bem como capacitá-los para o mundo do
+                    trabalho. E nossa visão é ser um centro de referência em educação profissional de qualidade, onde
+                    valores sejam respeitados. Como conhecimento, ética, Cidadania, cooperativismo e profissionalismo
+                    dos alunos que la estudam.</p>
+                <p>Hoje CEDUP conta com cursos Técnico de nível pós médio no eixo Tecnológico, Ambiente e Saúde, eixo de
+                    Gestão e Negócios e Segurança. Em 2016 o CEDUP começou com turmas do Mediotec, programa do Governo
+                    Federal hoje chamado Novos Caminhos onde tem com proposta o fortalecimento das políticas de educação
+                    profissional mediante a convergência das ações de fomento e execução, de produção pedagógica e de
+                    assistência técnica.</p>
+                <p>O CEDUP Professor Lycurgo Aleixo Nora recebeu está denominação através da Lei no 17.532 de junho de
+                    2018. Iniciou suas atividades na sede nova no Bairro Vila Nova, a obra foi realizada com recursos do
+                    Governo Federal, através do MEC, com contrapartida do Governo do Estado, que irá beneficiar toda a
+                    população do Planalto Norte catarinense, principalmente os cidadãos do município de Mafra. É
+                    reconhecido pelo Conselho Estadual da Educação de Santa Catarina e seus cursos tem validade
+                    Nacional. </p>
             </dic>
-        </article> 
+        </article>
     </section>
 
     <section>
-    <!-- Cursos -->
-    
+        <!-- Cursos -->
+        <div class="card-container">
+            <div class="card" style="width: 300px; background-color: #f2f7ff;" #href=administracao>
+                <br>
+                <h5 class="card-title" style="text-align: center; font-weight: bold;"> CURSO TÉCNICO EM
+                    ADMINISTRAÇÃO </h5>
+                <br>
+                <div class="shadow-lg p-1 mb-5 bg-body-tertiary rounded"> <img
+                        src="assets/img/administração/dd256b5b1444aeb2a859e326c31692f9.jpg" alt=""
+                        style="width: 250px; height: 180px;"></div>
+                <p>
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button"
+                        aria-expanded="false" aria-controls="collapseExample">
+                        Saiba mais...
+                    </a>
+                </p>
+                <div class="collapse" id="collapseExample">
+                    <div class="textoAdm" style="text-align: justify">
+                        O Técnico em administração é o profissional capacitado a exercer diversas
+                        funções de apoio a uma empresa, portanto possui uma gama muito grande de atuação,
+                        sendo assim uma base de conhecimento para vários setores. <br>
+                        O curso conta com uma carga horária de 1024 horas (1 ano e meio).
+                        <br>
+                        Neste curso você encontrará informações sobre:
+                        <br><br>
+                        <li>Economia</li>
+                        <li>Direito empresarial</li>
+                        <li>Matemática financeira</li>
+                        <li>Gestão de pessoas</li>
+                        <li>Marketing</li>
+                        <li>Logística</li>
+                        <br>
+                        Podem ser inscritos neste curso alunos cursando o 3º ano do ensino médio.
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="width: 300px; background-color: #f2f7ff;" #href=contabilidade>
+                <br>
+                <h5 class="card-title" style="text-align: center; font-weight: bold;"> CURSO TÉCNICO EM
+                    CONTABILIDADE </h5>
+                <br>
+                <div class="shadow-lg p-1 mb-5 bg-body-tertiary rounded"> <img
+                        src="assets/img/contabilidade/892cf06dae094ded40a2b6ac412a8c45.jpg" alt=""
+                        style="width: 250px; height: 180px;"></div>
+                <p>
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#contabilidade" role="button"
+                        aria-expanded="false" aria-controls="collapseExample">
+                        Saiba mais...
+                    </a>
+                </p>
+                <div class="collapse" id="contabilidade">
+                    <div class="textoAdm" style="text-align: justify" ;>
+                        O curso conta com uma carga horária de 800 horas (1 ano) <br>
+                        Para você que pretende ingressar ou aprimorar seus conhecimentos nas áreas de:
+                        Neste curso você encontrará informações sobre:
+                        <br><br>
+                        <li>Comunicação empresarial</li>
+                        <li>Técnicas contábeis</li>
+                        <li>Matemática financeira</li>
+                        <li>Escrituração</li>
+                        <li>Fundamentos da contabilidade</li>
+                        <li>Economia de mercados</li>
+                        <li>Estrutura de mercados</li>
+                        <li>Conciliação de contas</li>
+                        <li>Contabilidade de custos</li>
+                        <br>
+                        Para assim se tornar um profissional de destaque no mercado de trabalho <br>
+                        O conhecimento abre portas e facilita o caminho. <br>
+                        É necessária a conclusão do ensino médio.
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="width: flex; background-color:  #f2f7ff;" #href=enfermagem>
+                <br>
+                <h5 class="card-title" style="text-align: center; font-weight: bold;"> CURSO TÉCNICO EM ENFERMAGEM
+                </h5>
+                <br>
+                <div class="shadow-lg p-1 mb-5 bg-body-tertiary rounded"> <img
+                        src="assets/img/enfermagem/a2b7906f8ec798797a8f3cf3d5208662.jpg" alt=""
+                        style="width: 250px; height: 180px;"></div>
+                <p>
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#enfermagem" role="button"
+                        aria-expanded="false" aria-controls="collapseExample">
+                        Saiba mais...
+                    </a>
+                </p>
+                <div class="collapse" id="enfermagem">
+                    <div class="textoAdm" style="text-align: justify" ;>
+                        O curso de técnico em enfermagem possui uma carga horária de 1800 horas (1 ano e meio) <BR>
+                        Para as pessoas comprometidas com a saúde do ser humano e da coletividade, que desejam
+                        aprimorar seus conhecimentos nos temas:
+                        <br><br>
+                        <li>Anatomia e Fisiologia Humana</li>
+                        <li>Ética e Exercício profissional</li>
+                        <li>Microbiologia e Parasitologia</li>
+                        <li>Fundamentos da enfermagem</li>
+                        <li>Emergência e UTI</li>
+                        <li>Nutrição aplicada a enfermagem</li>
+                        <li>Farmacologia</li>
+                        <li>Psicologia aplicada</li>
+                        <li>Saúde mental e Neuropsiquiatria</li>
+                        <li>Enfermagem cirúrgica</li>
+                        <li>Enfermagem materno infantil</li>
+                        <li>Enfermagem em Gerontologia</li>
+                        <li>entre outros</li>
+                        <br>
+                        Tornando assim um profissional diferenciado em sua área de atuação.
+                        Para a inscrição do curso é necessário ser maior de 18 anos.<br>
+                        O curso conta com processo seletivo e é necessária a conclusão do ensino médio. <br>
+                        Consulte a direção do CEDUP para maiores informações.
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="width: flex; background-color:  #f2f7ff;" #href=informatica>
+                <br>
+                <h5 class="card-title" style="text-align: center; font-weight: bold;"> CURSO TÉCNICO EM INFORMÁTICA
+                </h5>
+                <br>
+                <div class="shadow-lg p-1 mb-5 bg-body-tertiary rounded"> <img
+                        src="assets/img/informatica/71acc3e5af0f1dd5af93e4175e3d1c8b.jpg" alt=""
+                        style="width: 250px; height: 180px;"></div>
+                <p>
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#informatica" role="button"
+                        aria-expanded="false" aria-controls="collapseExample">
+                        Saiba mais...
+                    </a>
+                </p>
+                <div class="collapse" id="informatica">
+                    <div class="textoAdm" style="text-align: justify" ;>
+                        O curso técnico em informática possui uma carga horária de 1200 horas (1 ano e meio)
+                        e possui como ênfase o desenvolvimento de sistemas e programação, abordando temas como:
+                        <br><br>
+                        <li>Algoritmos </li>
+                        <li>Estrutura de dados</li>
+                        <li>Inglês técnico</li>
+                        <li>Matemática aplicada</li>
+                        <li>Linguagens de programação</li>
+                        <li>Banco de dados</li>
+                        <li>Programação</li>
+                        <li>Programação web</li>
+                        <li>Redes</li>
+                        <br>
+                        Para profissionais ou pessoas que se interessam em desenvolver seu conhecimento na área
+                        tecnológica, abrindo portas para um mercado de trabalho muito requisitado atualmente. <br>
+                        A informação conciliada à conexão revoluciona o mundo. <br>
+                        Para ingressar no curso é necessária a conclusão do ensino médio.
+
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="width: flex; background-color:  #f2f7ff;" #href=logistica>
+                <br>
+                <h5 class="card-title" style="text-align: center; font-weight: bold;"> CURSO TÉCNICO EM LOGÍSTICA
+                </h5>
+                <br>
+                <div class="shadow-lg p-1 mb-5 bg-body-tertiary rounded"> <img
+                        src="assets/img/logistica/3129098f0d9aef76831c295f0966e6a0.jpg" alt=""
+                        style="width: 250px; height: 180px;"></div>
+                <p>
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#logistica" role="button"
+                        aria-expanded="false" aria-controls="collapseExample">
+                        Saiba mais...
+                    </a>
+                </p>
+                <div class="collapse" id="logistica">
+                    <div class="textoLog" style="text-align: justify">
+                        O curso técnico em logística possui a carga horária de 800 horas (1 ano)
+                        <br>
+                        Neste curso você encontrará informações sobre:
+                        <br><br>
+                        <li>Importação e exportação</li>
+                        <li>Cadeia de suprimentos</li>
+                        <li>Operações de terminais</li>
+                        <li>Operações portuárias</li>
+                        <li>Gestão de armazenamento</li>
+                        <li>Almoxarifado</li>
+                        <br>
+                        Neste curso o profissional se torna apto ao controle de materiais e recursos, para atuar
+                        diretamente na melhoria dos processos e fluxo de mercadorias de todos os departamentos,
+                        abrindo um leque de opções e oportunidade em vários setores.
+                        Para ingressar no curso é necessária a conclusão do ensino médio.
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="width: flex; background-color:  #f2f7ff;" #href=qualidade>
+                <br>
+                <h5 class="card-title" style="text-align: center; font-weight: bold;"> CURSO TÉCNICO EM QUALIDADE
+                </h5>
+                <br>
+                <div class="shadow-lg p-1 mb-5 bg-body-tertiary rounded"> <img
+                        src="assets/img/qualidade/3eeed9590e45367c47248bfcd9804381.jpg" alt=""
+                        style="width: 250px; height: 180px;"></div>
+                <p>
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#qualidade" role="button"
+                        aria-expanded="false" aria-controls="collapseExample">
+                        Saiba mais...
+                    </a>
+                </p>
+                <div class="collapse" id="qualidade">
+                    <div class="textoAdm" style="text-align: justify">
+                        O curso técnico em qualidade dispõe de uma carga horária de 800 horas (1 ano)
+                        abordando temas como:
+                        <br><br>
+                        <li>Desenvolvimento de projetos</li>
+                        <li>Qualidade e Produtividade</li>
+                        <li>Saúde e Segurança no trabalho</li>
+                        <li>Sustentabilidade</li>
+                        <li>Processos de melhoria</li>
+                        <li>Sistemas de Gestão de Qualidade</li>
+                        <br>
+                        Para se tornar um profissional em destaque, com uma área de atuação ampla e aplicação em
+                        diversos setores, o Técnico em Qualidade irá fornecer ao seu local de trabalho o
+                        desenvolvimento necessário para aprimorar os processos.
+                        Para ingressar no curso é necessária a conclusão do ensino médio.
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="width: flex; background-color:  #f2f7ff;" #href=RH>
+                <br>
+                <h5 class="card-title" style="text-align: center; font-weight: bold;"> CURSO TÉCNICO EM RECURSOS
+                    HUMANOS </h5>
+                <br>
+                <div class="shadow-lg p-1 mb-5 bg-body-tertiary rounded"> <img
+                        src="assets/img/RH/0c2630eb6e191574fcdf9b8e66085d68.jpg" alt=""
+                        style="width: 250px; height: 180px;"></div>
+                <p>
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#rh" role="button" aria-expanded="false"
+                        aria-controls="collapseExample">
+                        Saiba mais...
+                    </a>
+                </p>
+                <div class="collapse" id="rh">
+                    <div class="textoAdm" style="text-align: justify">
+                        O curso técnico em recursos humanos possui uma carga horária de 800 horas (1 ano)
+                        desenvolvimento os conhecimentos em temas como:
+                        <br><br>
+                        <li>Contratação e Recrutamento</li>
+                        <li>Direito trabalhista</li>
+                        <li>Psicologia organizacional</li>
+                        <li>Desenvolvimento de pessoas</li>
+                        <li>Ética profissional</li>
+                        <li>Controle de qualidade</li>
+                        <li>Gestão de pessoas</li>
+                        <br>
+                        Para se tornar um profissional em destaque não só no meio empresarial mas em vários setores,
+                        atuando com o desenvolvimento pessoal e o recurso humano.
+                        Para ingressar no curso é necessária a conclusão do ensino médio.
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="width: flex; background-color:  #f2f7ff;" #href=segurancaDoTrabalho>
+                <br>
+                <h5 class="card-title" style="text-align: center; font-weight: bold;"> TÉCNICO EM SEGURANÇA DO
+                    TRABALHO </h5>
+                <br>
+                <div class="shadow-lg p-1 mb-5 bg-body-tertiary rounded"> <img
+                        src="assets/img/segurança do trabaho/736a752f9163bd01005b5b935b02b262.jpg" alt=""
+                        style="width: 250px; height: 180px;"></div>
+                <p>
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#segurança" role="button"
+                        aria-expanded="false" aria-controls="collapseExample">
+                        Saiba mais...
+                    </a>
+                </p>
+                <div class="collapse" id="segurança">
+                    <div class="textoAdm" style="text-align: justify">
+                        O curso técnico em segurança do trabalho vem tomando cada vez mais importância no meio
+                        empresarial e industrial, o curso conta com a carga horária de 1340 horas (1 ano e meio) e
+                        traz informações nos seguintes quesitos:
+                        <br><br>
+                        <li>Técnicas e Treinamentos</li>
+                        <li>Psicologia no trabalho</li>
+                        <li>Prevenção de incêndios</li>
+                        <li>Legislação ambiental</li>
+                        <li>Legislação previdenciária</li>
+                        <li>Toxicologia </li>
+                        <li>Primeiros socorros</li>
+                        <li>Ergonomia</li>
+                        <li>Higiene Industrial</li>
+                        <br>
+                        O curso conta com programa de Estágio para tornar o profissional de Segurança do Trabalho
+                        apto a desenvolver seus conhecimentos no mercado de trabalho amplo e dinâmico.
+                        Para ingressar no curso é necessária a conclusão do ensino médio.
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section>
-    <!-- Sobre Feira -->
-    
+        <!-- Sobre Feira -->
+        <div class="card-container">
+            <div class="card" style="width: 100%; background-color: #f8fcf9;" #href=sobreAfeira>
+                <h2 class="card-title"
+                    style="font-size: x-large; font-weight: bold; text-align: center; color: #012340;"> Bem vindo a
+                    feira de profissões </h2>
+                <div class="textoAdm" style="text-align: justify">
+                    <br>
+                    <br>
+                    <h5>
+                        A feira de profissões tem como objetivo apresentar os diversos campos de atuação e seus
+                        respectivos cursos,
+                        expondo a comunidade e as pessoas interessadas algumas das opções de possíveis profissões a
+                        serem seguidas,
+                        para conhecer melhor as áreas do mercado de trabalho.<br>
+                        Neste ambiente você conhecerá mais sobre os cursos disponíveis no CEDUP atualmente, também
+                        conhecerá mais
+                        sobre as suas áreas de atuação.<br>
+                        Agradecemos sua visita e desejamos que a feira estimule ao máximo sua vontade de seguir a
+                        profissão dos sonhos,
+                        sinta se a vontade para adquirir conhecimento e moldar seus conceitos a respeito da vasta
+                        opção de desenvolvimento
+                        em vários setores e consequentemente uma colocação de sucesso no mercado de trabalho.
+                    </h5>
+                    <br>
+                    <br>
+                    <h4 style="text-align: center; font-weight: bold; color: #012340;">Lembre-se... somente você
+                        decide seu futuro!</h4>
+                    <br><br>
+                </div>
     </section>
 
     <section>
-    <!-- Stands da feira -->
-    
+        <!-- Stands da feira -->
+
     </section>
 
     <section>
-    <!-- Galeria de fotos -->
-    
+        <!-- Galeria de fotos -->
+
     </section>
 
     <section>
-    <!-- Menção -->
-    
+        <!-- Menção -->
+
     </section>
 
     <section id="contato" class="contact-container">
-    <!-- Contato -->
+        <!-- Contato -->
         <h1 class="title">Contate-nos</h1>
         <div class="contact-content">
             <div class="contact-wrapper">
@@ -83,21 +448,24 @@
                 </div>
             </div>
             <div class="map-iframe">
-                <iframe 
-                
-                style="border:0"
-                loading="lazy"
-
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1595.5831524413234!2d-49.82550254628841!3d-26.132747976289757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dd92c547c23e67%3A0xf11209e3f853bd3c!2sR.%20Estanislau%20Maieski%20-%20Vila%20Nova%2C%20Mafra%20-%20SC%2C%2089300-000!5e0!3m2!1spt-BR!2sbr!4v1683330332504!5m2!1spt-BR!2sbr" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe style="border:0" loading="lazy"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1595.5831524413234!2d-49.82550254628841!3d-26.132747976289757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dd92c547c23e67%3A0xf11209e3f853bd3c!2sR.%20Estanislau%20Maieski%20-%20Vila%20Nova%2C%20Mafra%20-%20SC%2C%2089300-000!5e0!3m2!1spt-BR!2sbr!4v1683330332504!5m2!1spt-BR!2sbr"
+                    width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </section>
-    
+
     <footer>
-    <!-- Rodapé -->
-    
+        <!-- Rodapé -->
+
     </footer>
 
     <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
