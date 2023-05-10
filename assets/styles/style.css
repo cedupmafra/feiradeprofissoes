@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* Reset de estilo padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Variáveis CSS */
+:root {
+    
+    /*  Fontes  */
+    --fonte-padrao: 400 1rem/1.5rem 'Inter', sans-serif;
+    --fonte-titulo: 600 2rem 'Inter', sans-serif;
+    
+    /*  Cores   */
+    --cor-primaria: #f5f5f5;
+    --azul-escuro: #012340;
+    --azul-claro: #022C66;
+    --verde-claro: #05C148;
+
+}
+
+/* classe padrão para títulos */
+.title {
+    font: var(--fonte-titulo);
+    letter-spacing: 5%;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/*  Sessão sobre cedup  */
+
+.aboutCedup-container {
+    width: 100%;
+    background: #f7f7f7;
+    color: var(--azul-claro);
+}
+
+.aboutCedup-container article {
+    width: 80%;
+    max-width: 800px;
+    padding: 1rem;
+    padding-bottom: 2rem;
+    margin: 0 auto;
+    color: #000;
+}
+
+.aboutCedup-container .aboutCedup-content p{
+    font: var(--fonte-padrao);
+    text-indent: 1rem;
+    text-align: justify;
+    margin-bottom: 1rem;
+    color: #000;
+}
+
+.aboutCedup-container article figure {
+    margin: 1rem 0;
+}
+
+.aboutCedup-container article figure img {
+    display: block;
+    width: 100%;
+}
+
+.aboutCedup-container article figure figcaption {
+    font: var(--fonte-padrao);
+    text-align: center;
+    font-style: italic;
+    font-size: 14px;
+    margin-top: 10px;
+}
+  
+/*  Sessão de contato*/
+.contact-container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(120.61deg, var(--verde-claro) 17.15%, var(--azul-claro) 84.6%);
+}
+
+.contact-container .title {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 58px;
+    color: var(--cor-primaria);
+}
+
+.contact-container .contact-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.contact-content .contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-right: 6rem;
+}
+
+.contact-wrapper .contact-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 16px 0;
+    cursor: pointer;
+}
+
+.contact-item a,p {
+    text-decoration: none;
+    font: var(--fonte-padrao);
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--cor-primaria);
+    margin-left: 8px;
+}
+
+.contact-content .map-iframe iframe{
+    height: 450px;
+    width: 600px;
+}
+
+@media screen and (max-width: 700px) {
+    /*Sessão de sobre o Cedup*/
+    .aboutCedup-container article {
+        width: 100%;
+    }
+    
+    /*Sessão de contato*/
+    .contact-container .title {
+        font-size: 2rem;
+    }
+
+    .contact-container .contact-content {
+        flex-direction: column;
+        padding: 2rem 0 0 0;
+    }
+
+    .contact-wrapper {
+        width: 300px;
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 1rem;
+        padding: 0 1rem;   
+    }
+
+    .contact-item a, .contact-item p {
+        font-size: 1rem;   
+    }
+
+    .contact-item a[href*="mailto:"] {
+        word-break: break-all;   
+        min-width: 100%;
+    }
+
+    .contact-item img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .map-iframe iframe {
+        max-width: 100%;
+        max-height: 300px;
+    }
+}
