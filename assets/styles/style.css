@@ -23,6 +23,32 @@
 
 }
 
+/* Luiz F.*/
+body{
+    background-color: #022C66;
+}
+.card{
+    float: left;
+    justify-content: center;
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+    background-color:#05C148;
+    color: black;
+    font-family: sans-serif;
+    text-align: center;
+
+}
+
+.card-title, .card-text{
+    color:white;
+}
+.titleMain{
+    text-align: center;
+    font-size: 35px;
+    color:#05C148;
+}
+
 /* classe padrão para títulos */
 .title {
     font: var(--fonte-titulo);
