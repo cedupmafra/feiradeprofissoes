@@ -25,6 +25,7 @@
 
 /* Luiz F.*/
 body{
+    font: var(--fonte-padrao);
     background-color: #022C66;
 }
 .card{
@@ -116,9 +117,9 @@ body{
 .contact-container .contact-content {
     display: flex;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: space-between;
     margin: 0 auto;
-    padding: 2rem 1rem;
+    padding: 2rem;
 }
 
 .contact-content .contact-wrapper {
@@ -126,7 +127,7 @@ body{
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    margin-right: 6rem;
+    margin-right: 2rem;
 }
 
 .contact-wrapper .contact-item {
@@ -137,21 +138,129 @@ body{
     cursor: pointer;
 }
 
-.contact-item a,p {
+.contact-item a,
+.contact-item p {
     text-decoration: none;
     font: var(--fonte-padrao);
     font-size: 1.3rem;
     font-weight: 700;
     color: var(--cor-primaria);
+    margin: 0;
     margin-left: 8px;
 }
 
-.contact-content .map-iframe iframe{
+.contact-content .map-iframe {
     height: 450px;
     width: 600px;
+    max-width: 100%;
 }
 
-@media screen and (max-width: 700px) {
+.contact-content .map-iframe iframe{
+    height: 100%;
+    max-width: 100%;
+}
+
+/*   Footer   */
+
+.footer {
+    background-color: var(--azul-escuro);
+}
+
+.footer__content {
+    width: 100%;
+    height: auto;
+    min-height: 300px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__content-logo {
+    width: 100px;
+    height: 100px;
+    margin-right: 2rem;
+}
+
+.footer__content-logo img {
+    display: block;
+    max-width: 100px;
+    max-height: 100%;
+}
+
+.footer__content-contact,
+.footer__content-social,
+.footer__content-links {
+    flex: 1;
+    margin-right: 2rem;
+}
+
+.footer__content-contact-title,
+.footer__content-social-title,
+.footer__content-links-title {
+    font: var(--fonte-titulo);
+    font-size: 1.5rem;
+    color: var(--cor-primaria);
+    margin-bottom: 1rem;
+}
+
+.footer__content-contact-list,
+.footer__content-social-list,
+.footer__content-links-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer__content-contact-item,
+.footer__content-social-item,
+.footer__content-links-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: .5rem;
+}
+
+.footer__content-contact-item img,
+.footer__content-social-item img,
+.footer__content-links-item img{
+    max-width: 24px;
+    height: 24px;
+}
+
+.footer__content-contact-link,
+.footer__content-social-link,
+.footer__content-links-link {
+    font: var(--fonte-padrao);
+    font-weight: 500;
+    text-decoration: none;
+    color:var(--cor-primaria);
+    margin-left: .5rem;
+    transition: .3s ease-in-out;
+}
+
+.footer__content-links-link {
+    margin-left: 0;
+}
+
+.footer__content-contact-link:hover,
+.footer__content-social-link:hover,
+.footer__content-links-link:hover {
+    text-decoration: underline;
+}
+  
+.footer__copy {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    border-top: 1.5px solid var(--cor-primaria);
+    color: var(--cor-primaria);
+    text-align: center;
+    font: var(--fonte-padrao);
+    font-weight: 500;
+}
+
+@media screen and (max-width: 800px) {
     /*Sessão de sobre o Cedup*/
     .aboutCedup-container article {
         width: 100%;
@@ -168,13 +277,40 @@ body{
     }
 
     .contact-wrapper {
-        width: 300px;
+        width: 100%;
         max-width: 100%;
         margin-right: 0;
         margin-bottom: 1rem;
         padding: 0 1rem;   
     }
 
+    .contact-content .map-iframe {
+        width: 100%;
+        max-height: 300px;
+    }
+
+    /*Footer*/
+    .footer .footer__content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer__content-logo {
+        width: 75px;
+        height: 75px;
+        margin: 1rem 0;
+    }
+
+    .footer__content-contact,
+    .footer__content-social,
+    .footer__content-links {
+      flex: 1;
+      margin: 1rem 0;
+    }
+}
+
+@media screen and (max-width: 650px){
+    /*Sessão de contato*/
     .contact-item a, .contact-item p {
         font-size: 1rem;   
     }
@@ -187,10 +323,5 @@ body{
     .contact-item img {
         width: 24px;
         height: 24px;
-    }
-
-    .map-iframe iframe {
-        max-width: 100%;
-        max-height: 300px;
     }
 }
