@@ -11,28 +11,100 @@
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 
     <title>CEDUP</title>
-
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link href="assets/styles/scroll.css" rel="stylesheet">
+    <link href="assets/styles/estilo02.css" rel="stylesheet">
     <style>
-        .card {
-            background-color: #f8f8f8;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
-            margin: 10px;
-            padding: 20px;
-            width: 300px;
-        }
+        .Geral {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 125px;
+    background-color: #88f3ae;
+    width: auto;
+  }
 
+  .card-sobre {
+    height: auto;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    display: flex;
+    background-color: #ffff;
+    border-radius: 5px;
+
+  }
+  .imagens {
+    max-width: 100%;
+    max-height: 84vh;
+    object-fit: cover;
+  }
+       .card {
+          background-color: #ffffff;
+          border: 1px solid #37fdaa;
+          border-radius: 5px;
+          box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+          margin: 10px;
+          padding: 20px;
+          width: 300px;
+        }
+        .card1 {
+          background-color: #ffffff;
+          border: 1px solid #37fdaa;
+          border-radius: 5px;
+          box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+          margin: 10px;
+          padding: 20px;
+          text-align: center
+        }
+        .card-final {
+          background-color: #ffffff;
+          border: 1px solid #37fdaa;
+          border-radius: 5px;
+          box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+          margin: 10px;
+          padding: 20px;
+          width: 200px;
+          height: 272px;
+          color:  #012340;
+        }
+  
         .card-container {
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-            height: auto;
-            padding: 0 2rem;
-            flex-wrap: wrap;
-            background-color: #88f3ae;
-
+          display: flex;
+          justify-content: center;
+          align-items: flex-start;
+          height: auto;
+          padding:0 2rem;
+          flex-wrap: wrap;
+          background-color: #88f3ae;
+  
         }
+        .card-agradecimentos {
+          display: flex;
+          justify-content: center;
+          align-items: flex-start;
+          height: auto;
+          padding:1 2rem;
+          flex-wrap: wrap;
+          background-color: #88f3ae;
+  
+        }
+        .cardtitulo {
+          display: flex;
+          justify-content: center;
+          align-items: flex-start;
+          height: auto;
+          background-color: #88f3ae;
+        }
+        .imagem {
+              display: flex;
+              justify-content: space-between;
+          }
+          .card-profile{
+              margin: 5px;
+              height: auto;
+             
+          }
     </style>
 </head>
 
@@ -91,410 +163,698 @@
         </article>
     </section>
 
-    <section>
-        <!-- Cursos -->
-        <div class="card-container">
-            <div class="card" style="width: 300px; background-color: #f2f7ff;" #href=administracao>
-                <br>
-                <h5 class="card-title" style="text-align: center; font-weight: bold;"> CURSO TÉCNICO EM
-                    ADMINISTRAÇÃO </h5>
-                <br>
-                <div class="shadow-lg p-1 mb-5 bg-body-tertiary rounded"> <img
-                        src="assets/img/administração/dd256b5b1444aeb2a859e326c31692f9.jpg" alt=""
-                        style="width: 250px; height: 180px;"></div>
-                <p>
-                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button"
-                        aria-expanded="false" aria-controls="collapseExample">
-                        Saiba mais...
-                    </a>
-                </p>
-                <div class="collapse" id="collapseExample">
-                    <div class="textoAdm" style="text-align: justify">
-                        O Técnico em administração é o profissional capacitado a exercer diversas
-                        funções de apoio a uma empresa, portanto possui uma gama muito grande de atuação,
-                        sendo assim uma base de conhecimento para vários setores. <br>
-                        O curso conta com uma carga horária de 1024 horas (1 ano e meio).
-                        <br>
-                        Neste curso você encontrará informações sobre:
-                        <br><br>
-                        <li>Economia</li>
-                        <li>Direito empresarial</li>
-                        <li>Matemática financeira</li>
-                        <li>Gestão de pessoas</li>
-                        <li>Marketing</li>
-                        <li>Logística</li>
-                        <br>
-                        Podem ser inscritos neste curso alunos cursando o 3º ano do ensino médio.
-                    </div>
-                </div>
+    <div class="card-container">
+        <div class="card1" style="width: 100%; ">
+            <div class="imagem"> 
+            <img src="assets/img/outras imagens/logoCEDUP.png" alt="logo" style="width: 100px; height: 80px;">
+            <h1 style="font-size: 56; font-weight: bold; text-align: center; color: #012340;"> Conheça nossos cursos </h1>
+            <img src="assets/img/outras imagens/logoCEDUP.png" alt="logo" style="width: 100px; height: 80px;">
+        </div>
+        </div>
+    </div>
+<!-- cursos -->
+    <div class="card-container">
+    <div class="card" style="width: 300px; background-color: #ffffff;" #href=administracao>
+        <br>
+        <h5 class="card-title" style="text-align: center; font-weight: bold;"> CURSO TÉCNICO EM ADMINISTRAÇÃO </h5>
+        <br>
+        <div class="shadow-lg p-1 mb-5 bg-body-tertiary rounded"> <img src="assets/img/administração/dd256b5b1444aeb2a859e326c31692f9.jpg" alt="" style="width: 250px; height: 180px;"></div>
+        <div class="imagem">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#tecAdm">
+                Saiba mais...
+              </button> 
+            </p>
+            <img src="assets/img/administração/logo-adm.jpg" style ="height: 40px; width: 60px;">
+           </div>
+        <p>
+        
+            <div class="collapse" id="collapseExample">
+            
             </div>
-            <div class="card" style="width: 300px; background-color: #f2f7ff;" #href=contabilidade>
-                <br>
-                <h5 class="card-title" style="text-align: center; font-weight: bold;"> CURSO TÉCNICO EM
-                    CONTABILIDADE </h5>
-                <br>
-                <div class="shadow-lg p-1 mb-5 bg-body-tertiary rounded"> <img
-                        src="assets/img/contabilidade/892cf06dae094ded40a2b6ac412a8c45.jpg" alt=""
-                        style="width: 250px; height: 180px;"></div>
-                <p>
-                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#contabilidade" role="button"
-                        aria-expanded="false" aria-controls="collapseExample">
-                        Saiba mais...
-                    </a>
-                </p>
-                <div class="collapse" id="contabilidade">
-                    <div class="textoAdm" style="text-align: justify" ;>
-                        O curso conta com uma carga horária de 800 horas (1 ano) <br>
-                        Para você que pretende ingressar ou aprimorar seus conhecimentos nas áreas de:
-                        Neste curso você encontrará informações sobre:
-                        <br><br>
-                        <li>Comunicação empresarial</li>
-                        <li>Técnicas contábeis</li>
-                        <li>Matemática financeira</li>
-                        <li>Escrituração</li>
-                        <li>Fundamentos da contabilidade</li>
-                        <li>Economia de mercados</li>
-                        <li>Estrutura de mercados</li>
-                        <li>Conciliação de contas</li>
-                        <li>Contabilidade de custos</li>
-                        <br>
-                        Para assim se tornar um profissional de destaque no mercado de trabalho <br>
-                        O conhecimento abre portas e facilita o caminho. <br>
-                        É necessária a conclusão do ensino médio.
-                    </div>
-                </div>
             </div>
-            <div class="card" style="width: flex; background-color:  #f2f7ff;" #href=enfermagem>
-                <br>
-                <h5 class="card-title" style="text-align: center; font-weight: bold;"> CURSO TÉCNICO EM ENFERMAGEM
-                </h5>
-                <br>
-                <div class="shadow-lg p-1 mb-5 bg-body-tertiary rounded"> <img
-                        src="assets/img/enfermagem/a2b7906f8ec798797a8f3cf3d5208662.jpg" alt=""
-                        style="width: 250px; height: 180px;"></div>
-                <p>
-                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#enfermagem" role="button"
-                        aria-expanded="false" aria-controls="collapseExample">
-                        Saiba mais...
-                    </a>
-                </p>
-                <div class="collapse" id="enfermagem">
-                    <div class="textoAdm" style="text-align: justify" ;>
-                        O curso de técnico em enfermagem possui uma carga horária de 1800 horas (1 ano e meio) <BR>
-                        Para as pessoas comprometidas com a saúde do ser humano e da coletividade, que desejam
-                        aprimorar seus conhecimentos nos temas:
-                        <br><br>
-                        <li>Anatomia e Fisiologia Humana</li>
-                        <li>Ética e Exercício profissional</li>
-                        <li>Microbiologia e Parasitologia</li>
-                        <li>Fundamentos da enfermagem</li>
-                        <li>Emergência e UTI</li>
-                        <li>Nutrição aplicada a enfermagem</li>
-                        <li>Farmacologia</li>
-                        <li>Psicologia aplicada</li>
-                        <li>Saúde mental e Neuropsiquiatria</li>
-                        <li>Enfermagem cirúrgica</li>
-                        <li>Enfermagem materno infantil</li>
-                        <li>Enfermagem em Gerontologia</li>
-                        <li>entre outros</li>
-                        <br>
-                        Tornando assim um profissional diferenciado em sua área de atuação.
-                        Para a inscrição do curso é necessário ser maior de 18 anos.<br>
-                        O curso conta com processo seletivo e é necessária a conclusão do ensino médio. <br>
-                        Consulte a direção do CEDUP para maiores informações.
-                    </div>
-                </div>
+    <div class="card" style="width: 300px; background-color: #ffffff;" #href=contabilidade>
+        <br>
+        <h5 class="card-title" style="text-align: center; font-weight: bold;"> CURSO TÉCNICO EM CONTABILIDADE </h5>
+        <br>
+        <div class="shadow-lg p-1 mb-5 bg-body-tertiary rounded"> <img src="assets/img/contabilidade/892cf06dae094ded40a2b6ac412a8c45.jpg" alt="" style="width: 250px; height: 180px;"></div>
+        <div class="imagem">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#tecContabilidade">
+                Saiba mais...
+              </button> 
+            </p>
+            <img src="assets/img/contabilidade/Contabilidade-logo-A8FEFF7C9D-seeklogo.com.png" style ="height: 40px; width: 60px;">
+           </div>
+        <p>
+            <div class="collapse" id="contabilidade">
+            
             </div>
-            <div class="card" style="width: flex; background-color:  #f2f7ff;" #href=informatica>
-                <br>
-                <h5 class="card-title" style="text-align: center; font-weight: bold;"> CURSO TÉCNICO EM INFORMÁTICA
-                </h5>
-                <br>
-                <div class="shadow-lg p-1 mb-5 bg-body-tertiary rounded"> <img
-                        src="assets/img/informatica/71acc3e5af0f1dd5af93e4175e3d1c8b.jpg" alt=""
-                        style="width: 250px; height: 180px;"></div>
-                <p>
-                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#informatica" role="button"
-                        aria-expanded="false" aria-controls="collapseExample">
-                        Saiba mais...
-                    </a>
-                </p>
-                <div class="collapse" id="informatica">
-                    <div class="textoAdm" style="text-align: justify" ;>
-                        O curso técnico em informática possui uma carga horária de 1200 horas (1 ano e meio)
-                        e possui como ênfase o desenvolvimento de sistemas e programação, abordando temas como:
-                        <br><br>
-                        <li>Algoritmos </li>
-                        <li>Estrutura de dados</li>
-                        <li>Inglês técnico</li>
-                        <li>Matemática aplicada</li>
-                        <li>Linguagens de programação</li>
-                        <li>Banco de dados</li>
-                        <li>Programação</li>
-                        <li>Programação web</li>
-                        <li>Redes</li>
-                        <br>
-                        Para profissionais ou pessoas que se interessam em desenvolver seu conhecimento na área
-                        tecnológica, abrindo portas para um mercado de trabalho muito requisitado atualmente. <br>
-                        A informação conciliada à conexão revoluciona o mundo. <br>
-                        Para ingressar no curso é necessária a conclusão do ensino médio.
+            </div>
+    <div class="card" style="width: flex; background-color:  #ffffff;" #href=enfermagem>
+        <br>
+        <h5 class="card-title" style="text-align: center; font-weight: bold;"> CURSO TÉCNICO EM ENFERMAGEM </h5>
+        <br>
+        <div class="shadow-lg p-1 mb-5 bg-body-tertiary rounded" > <img src="assets/img/enfermagem/a2b7906f8ec798797a8f3cf3d5208662.jpg" alt="" style="width: 250px; height: 180px;"></div>
+        <div class="imagem">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#tecEnfermagem">
+                Saiba mais...
+              </button> 
+            </p>
+            <img src="assets/img/enfermagem/download.png    " style ="height: 40px; width: 60px;">
+           </div>
+        <p>
+            <div class="collapse" id="enfermagem">
+            
+            </div>
+            </div>
+    <div class="card" style="width: flex; background-color:  #ffffff;" #href=informatica>
+        <br>
+        <h5 class="card-title" style="text-align: center; font-weight: bold;"> CURSO TÉCNICO EM INFORMÁTICA </h5>
+        <br>
+        <div class="shadow-lg p-1 mb-5 bg-body-tertiary rounded"> <img src="assets/img/informatica/71acc3e5af0f1dd5af93e4175e3d1c8b.jpg" alt="" style="width: 250px; height: 180px;"></div>
+        <div class="imagem">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#tecInformatica">
+                Saiba mais...
+              </button> 
+            </p>
+            <img src="assets/img/informatica/download.png" style ="height: 40px; width: 60px;">
+           </div>
+        <p>
+            <div class="collapse" id="informatica">
+            <div class="textoAdm" style="text-align: justify";>
+                O curso técnico em informática possui uma carga horária de 1200 horas (1 ano e meio), 100% presencial.
+                e possui como ênfase o desenvolvimento de sistemas e programação, abordando temas como: 
+                <br><br>
+                <li>Algoritmos </li>
+                <li>Estrutura de dados</li>
+                <li>Inglês técnico</li>
+                <li>Matemática aplicada</li>
+                <li>Linguagens de programação</li>
+                <li>Banco de dados</li>
+                <li>Programação</li>
+                <li>Programação web</li>
+                <li>Redes</li>
+                <br> 
+                Para profissionais ou pessoas que se interessam em desenvolver seu conhecimento na área tecnológica, abrindo portas para um mercado de trabalho muito requisitado atualmente. <br>
+                A informação conciliada à conexão revoluciona o mundo. <br>
+                Para ingressar no curso é necessária a conclusão do ensino médio.
 
-                    </div>
-                </div>
             </div>
-            <div class="card" style="width: flex; background-color:  #f2f7ff;" #href=logistica>
-                <br>
-                <h5 class="card-title" style="text-align: center; font-weight: bold;"> CURSO TÉCNICO EM LOGÍSTICA
-                </h5>
-                <br>
-                <div class="shadow-lg p-1 mb-5 bg-body-tertiary rounded"> <img
-                        src="assets/img/logistica/3129098f0d9aef76831c295f0966e6a0.jpg" alt=""
-                        style="width: 250px; height: 180px;"></div>
-                <p>
-                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#logistica" role="button"
-                        aria-expanded="false" aria-controls="collapseExample">
-                        Saiba mais...
-                    </a>
-                </p>
-                <div class="collapse" id="logistica">
-                    <div class="textoLog" style="text-align: justify">
-                        O curso técnico em logística possui a carga horária de 800 horas (1 ano)
-                        <br>
-                        Neste curso você encontrará informações sobre:
-                        <br><br>
-                        <li>Importação e exportação</li>
-                        <li>Cadeia de suprimentos</li>
-                        <li>Operações de terminais</li>
-                        <li>Operações portuárias</li>
-                        <li>Gestão de armazenamento</li>
-                        <li>Almoxarifado</li>
-                        <br>
-                        Neste curso o profissional se torna apto ao controle de materiais e recursos, para atuar
-                        diretamente na melhoria dos processos e fluxo de mercadorias de todos os departamentos,
-                        abrindo um leque de opções e oportunidade em vários setores.
-                        Para ingressar no curso é necessária a conclusão do ensino médio.
-                    </div>
-                </div>
             </div>
-            <div class="card" style="width: flex; background-color:  #f2f7ff;" #href=qualidade>
-                <br>
-                <h5 class="card-title" style="text-align: center; font-weight: bold;"> CURSO TÉCNICO EM QUALIDADE
-                </h5>
-                <br>
-                <div class="shadow-lg p-1 mb-5 bg-body-tertiary rounded"> <img
-                        src="assets/img/qualidade/3eeed9590e45367c47248bfcd9804381.jpg" alt=""
-                        style="width: 250px; height: 180px;"></div>
-                <p>
-                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#qualidade" role="button"
-                        aria-expanded="false" aria-controls="collapseExample">
-                        Saiba mais...
-                    </a>
-                </p>
-                <div class="collapse" id="qualidade">
-                    <div class="textoAdm" style="text-align: justify">
-                        O curso técnico em qualidade dispõe de uma carga horária de 800 horas (1 ano)
-                        abordando temas como:
-                        <br><br>
-                        <li>Desenvolvimento de projetos</li>
-                        <li>Qualidade e Produtividade</li>
-                        <li>Saúde e Segurança no trabalho</li>
-                        <li>Sustentabilidade</li>
-                        <li>Processos de melhoria</li>
-                        <li>Sistemas de Gestão de Qualidade</li>
-                        <br>
-                        Para se tornar um profissional em destaque, com uma área de atuação ampla e aplicação em
-                        diversos setores, o Técnico em Qualidade irá fornecer ao seu local de trabalho o
-                        desenvolvimento necessário para aprimorar os processos.
-                        Para ingressar no curso é necessária a conclusão do ensino médio.
-                    </div>
-                </div>
             </div>
-            <div class="card" style="width: flex; background-color:  #f2f7ff;" #href=RH>
-                <br>
-                <h5 class="card-title" style="text-align: center; font-weight: bold;"> CURSO TÉCNICO EM RECURSOS
-                    HUMANOS </h5>
-                <br>
-                <div class="shadow-lg p-1 mb-5 bg-body-tertiary rounded"> <img
-                        src="assets/img/RH/0c2630eb6e191574fcdf9b8e66085d68.jpg" alt=""
-                        style="width: 250px; height: 180px;"></div>
-                <p>
-                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#rh" role="button" aria-expanded="false"
-                        aria-controls="collapseExample">
-                        Saiba mais...
-                    </a>
-                </p>
-                <div class="collapse" id="rh">
-                    <div class="textoAdm" style="text-align: justify">
-                        O curso técnico em recursos humanos possui uma carga horária de 800 horas (1 ano)
-                        desenvolvimento os conhecimentos em temas como:
-                        <br><br>
-                        <li>Contratação e Recrutamento</li>
-                        <li>Direito trabalhista</li>
-                        <li>Psicologia organizacional</li>
-                        <li>Desenvolvimento de pessoas</li>
-                        <li>Ética profissional</li>
-                        <li>Controle de qualidade</li>
-                        <li>Gestão de pessoas</li>
-                        <br>
-                        Para se tornar um profissional em destaque não só no meio empresarial mas em vários setores,
-                        atuando com o desenvolvimento pessoal e o recurso humano.
-                        Para ingressar no curso é necessária a conclusão do ensino médio.
-                    </div>
-                </div>
+    <div class="card" style="width: flex; background-color:  #ffffff;" #href=logistica>
+        <br>
+        <h5 class="card-title" style="text-align: center; font-weight: bold;"> CURSO TÉCNICO EM LOGÍSTICA </h5>
+        <br>
+        <div class="shadow-lg p-1 mb-5 bg-body-tertiary rounded"> <img src="assets/img/logistica/3129098f0d9aef76831c295f0966e6a0.jpg" alt="" style="width: 250px; height: 180px;"></div>
+        <div class="imagem">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#tecLogistica">
+                Saiba mais...
+              </button> 
+            </p>
+            <img src="assets/img/logistica/fa420c00-0692-4b7c-a96f-f2a637dd2368.png" style ="height: 40px; width: 60px;">
+           </div>
+        <p>
+            <div class="collapse" id="logistica">
+            
             </div>
-            <div class="card" style="width: flex; background-color:  #f2f7ff;" #href=segurancaDoTrabalho>
+            </div>
+    <div class="card" style="width: flex; background-color:  #ffffff;" #href=qualidade>
+        <br>
+        <h5 class="card-title" style="text-align: center; font-weight: bold;"> CURSO TÉCNICO EM QUALIDADE </h5>
+        <br>
+        <div class="shadow-lg p-1 mb-5 bg-body-tertiary rounded"> <img src="assets/img/qualidade/3eeed9590e45367c47248bfcd9804381.jpg" alt="" style="width: 250px; height: 180px;"></div>
+        <div class="imagem">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#tecQualidade">
+                Saiba mais...
+              </button>  
+            </p>
+            <img src="assets/img/qualidade/logo.avif" style ="height: 40px; width: 60px;">
+           </div>
+        <p>
+            <div class="collapse" id="qualidade">
+            
+            </div>
+            </div>
+    <div class="card" style="width: flex; background-color:  #ffffff;" #href=RH>
+        <br>
+        <h5 class="card-title" style="text-align: center; font-weight: bold;"> CURSO TÉCNICO EM RECURSOS HUMANOS  </h5>
+        <br>
+        <div class="shadow-lg p-1 mb-5 bg-body-tertiary rounded"> <img src="assets/img/RH/0c2630eb6e191574fcdf9b8e66085d68.jpg" alt="" style="width: 250px; height: 180px;"></div>
+        <div class="imagem">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#recursosHumanos">
+                Saiba mais...
+              </button>  
+            </p>
+            <img src="assets/img/RH/logo-rh-702x768.png" style ="height: 40px; width: 60px;">
+           </div>
+        <p>
+            <div class="collapse" id="rh">
+            
+            </div>
+            </div>
+    <div class="card" style="width: flex; background-color:  #ffffff;" #href=segurancaDoTrabalho>
+        <br>
+        <h5 class="card-title" style="text-align: center; font-weight: bold;"> TÉCNICO EM SEGURANÇA DO TRABALHO </h5>
+        <br>
+        <div class="shadow-lg p-1 mb-5 bg-body-tertiary rounded"> <img src="assets/img/segurança do trabaho/736a752f9163bd01005b5b935b02b262.jpg" alt="" style="width: 250px; height: 180px;"></div>
+        <div class="imagem">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#segTrabalho">
+                Saiba mais...
+              </button>    
+            </p>
+            <img src="assets/img/segurança do trabaho/download.png" style ="height: 40px; width: 60px;">
+           </div>
+        <p>
+            <div class="collapse" id="segurança">
+            
+            </div>
+            </div>
+    </div>
+
+    <!-- Modal -->
+<div class="modal modal-lg fade" id="tecAdm" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">CURSO TÉCNICO EM ADMINISTRAÇÃO</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="textoAdm" style="text-align: justify">
+                O Técnico em administração é  o  profissional capacitado  a  exercer diversas 
+                funções de apoio a uma empresa, portanto possui uma gama muito grande de atuação, 
+                sendo  assim uma  base  de  conhecimento  para  vários  setores. <br>
+                O curso conta com uma carga horária de 1024 horas (1 ano e meio), 100% presencial. 
                 <br>
-                <h5 class="card-title" style="text-align: center; font-weight: bold;"> TÉCNICO EM SEGURANÇA DO
-                    TRABALHO </h5>
+                Neste curso você encontrará informações sobre: 
+                <br><br>
+                <li>Economia</li>
+                <li>Direito empresarial</li>
+                <li>Matemática financeira</li>
+                <li>Gestão de pessoas</li>
+                <li>Marketing</li>
+                <li>Logística</li>
                 <br>
-                <div class="shadow-lg p-1 mb-5 bg-body-tertiary rounded"> <img
-                        src="assets/img/segurança do trabaho/736a752f9163bd01005b5b935b02b262.jpg" alt=""
-                        style="width: 250px; height: 180px;"></div>
-                <p>
-                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#segurança" role="button"
-                        aria-expanded="false" aria-controls="collapseExample">
-                        Saiba mais...
-                    </a>
-                </p>
-                <div class="collapse" id="segurança">
-                    <div class="textoAdm" style="text-align: justify">
-                        O curso técnico em segurança do trabalho vem tomando cada vez mais importância no meio
-                        empresarial e industrial, o curso conta com a carga horária de 1340 horas (1 ano e meio) e
-                        traz informações nos seguintes quesitos:
-                        <br><br>
-                        <li>Técnicas e Treinamentos</li>
-                        <li>Psicologia no trabalho</li>
-                        <li>Prevenção de incêndios</li>
-                        <li>Legislação ambiental</li>
-                        <li>Legislação previdenciária</li>
-                        <li>Toxicologia </li>
-                        <li>Primeiros socorros</li>
-                        <li>Ergonomia</li>
-                        <li>Higiene Industrial</li>
-                        <br>
-                        O curso conta com programa de Estágio para tornar o profissional de Segurança do Trabalho
-                        apto a desenvolver seus conhecimentos no mercado de trabalho amplo e dinâmico.
-                        Para ingressar no curso é necessária a conclusão do ensino médio.
-                    </div>
-                </div>
+                 Podem  ser  inscritos  neste curso  alunos  cursando o 3º ano do ensino médio.
             </div>
         </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+        </div>
+    </div>
+    </div>
+<div class="modal modal-lg fade" id="tecContabilidade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">CURSO TÉCNICO EM CONTABILIDADE</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="textoAdm" style="text-align: justify";>
+                O curso conta com uma carga horária de 800 horas (1 ano), 100% presencial. <br>
+                Para você que pretende ingressar ou aprimorar seus conhecimentos nas áreas de: 
+                Neste curso você encontrará informações sobre: 
+                <br><br>
+                <li>Comunicação empresarial</li>
+                <li>Técnicas contábeis</li>
+                <li>Matemática financeira</li>
+                <li>Escrituração</li>
+                <li>Fundamentos da contabilidade</li>
+                <li>Economia de mercados</li>
+                <li>Estrutura de mercados</li>
+                <li>Conciliação de contas</li>
+                <li>Contabilidade de custos</li>
+                <br>
+                 Para assim se tornar um profissional de destaque no mercado de trabalho <br>
+                 O conhecimento abre portas e facilita o caminho. <br>
+                 É necessária a conclusão do ensino médio.
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+        </div>
+    </div>
+    </div>
+<div class="modal modal-lg fade" id="tecEnfermagem" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">CURSO TÉCNICO EM ENFERMAGEM</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="textoAdm" style="text-align: justify";>
+                O curso de técnico em enfermagem possui uma carga horária de 1800 horas (1 ano e meio), 100% presencial. <BR>
+                Para as pessoas comprometidas com a saúde do ser humano e da coletividade, que desejam aprimorar seus conhecimentos nos temas:   
+                <br><br>
+                <li>Anatomia e Fisiologia Humana</li>
+                <li>Ética e Exercício profissional</li>
+                <li>Microbiologia e Parasitologia</li>
+                <li>Fundamentos da enfermagem</li>
+                <li>Emergência e UTI</li>
+                <li>Nutrição aplicada a enfermagem</li>
+                <li>Farmacologia</li>
+                <li>Psicologia aplicada</li>
+                <li>Saúde mental e Neuropsiquiatria</li>
+                <li>Enfermagem cirúrgica</li>
+                <li>Enfermagem materno infantil</li>
+                <li>Enfermagem em Gerontologia</li>
+                <li>entre outros</li>
+                <br>  
+                Tornando assim um profissional diferenciado em sua área de atuação.
+                Para a inscrição do curso é necessário ser maior de 18 anos.<br>
+                O curso conta com processo seletivo e é necessária a conclusão do ensino médio. <br>
+                Consulte a direção do CEDUP para maiores informações.
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+        </div>
+    </div>
+    </div>
+<div class="modal modal-lg fade" id="tecInformatica" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">CURSO TÉCNICO EM INFORMÁTICA</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="textoAdm" style="text-align: justify">
+                O curso técnico em segurança do trabalho vem tomando cada vez mais importância no meio empresarial e industrial <br> 
+                O curso conta com a carga horária de 1340 horas (1 ano e meio), 100% presencial. e traz informações nos seguintes quesitos: 
+                <br><br>
+                <li>Técnicas e Treinamentos</li>
+                <li>Psicologia no trabalho</li>
+                <li>Prevenção de incêndios</li>
+                <li>Legislação ambiental</li>
+                <li>Legislação previdenciária</li>
+                <li>Toxicologia </li>
+                <li>Primeiros socorros</li>
+                <li>Ergonomia</li>
+                <li>Higiene Industrial</li>
+                <br>
+                    O curso conta com programa de Estágio para tornar o profissional de Segurança do Trabalho apto a desenvolver seus conhecimentos no mercado de trabalho amplo e dinâmico.
+                    Para ingressar no curso é necessária a conclusão do ensino médio.
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+        </div>
+    </div>
+    </div>
+<div class="modal modal-lg fade" id="tecLogistica" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">CURSO TÉCNICO EM LOGÍSTICA</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="textoLog" style="text-align: justify">
+                O curso técnico em logística possui a carga horária de 800 horas (1 ano), 100% presencial.
+                <br>
+                Neste curso você encontrará informações sobre: 
+                <br><br>
+                <li>Importação e exportação</li>
+                <li>Cadeia de suprimentos</li>
+                <li>Operações de terminais</li>
+                <li>Operações portuárias</li>
+                <li>Gestão de armazenamento</li>
+                <li>Almoxarifado</li>
+                <br>
+                    Neste curso o profissional se torna apto ao controle de materiais e recursos, para atuar diretamente na melhoria dos processos e fluxo de mercadorias de todos os departamentos, abrindo um leque de opções e oportunidade em vários setores.
+                    Para ingressar no curso é necessária a conclusão do ensino médio.
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+        </div>
+    </div>
+    </div>
+<div class="modal modal-lg fade" id="tecQualidade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">CURSO TÉCNICO EM QUALIDADE</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="textoAdm" style="text-align: justify">
+                O curso técnico em qualidade dispõe de uma carga horária de 800 horas (1 ano), 100% presencial.
+                abordando temas como:
+                <br><br>
+                <li>Desenvolvimento de projetos</li>
+                <li>Qualidade e Produtividade</li>
+                <li>Saúde e Segurança no trabalho</li>
+                <li>Sustentabilidade</li>
+                <li>Processos de melhoria</li>
+                <li>Sistemas de Gestão de Qualidade</li>
+                <br>
+                Para se tornar um profissional em destaque, com uma área de atuação ampla e aplicação em diversos setores, o Técnico em Qualidade irá fornecer ao seu local de trabalho o desenvolvimento necessário para aprimorar os processos.
+                Para ingressar no curso é necessária a conclusão do ensino médio.
+            </div>
+        </div>
+        <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+     </div>
+    </div>
+<div class="modal modal-lg fade" id="recursosHumanos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">CURSO TÉCNICO EM RECURSOS HUMANOS</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="textoAdm" style="text-align: justify">
+                O curso técnico em recursos humanos possui uma carga horária de 800 horas (1 ano), 100% presencial.
+                desenvolvimento os conhecimentos em temas como:
+                <br><br>
+                <li>Contratação e Recrutamento</li>
+                <li>Direito trabalhista</li>
+                <li>Psicologia organizacional</li>
+                <li>Desenvolvimento de pessoas</li>
+                <li>Ética profissional</li>
+                <li>Controle de qualidade</li>
+                <li>Gestão de pessoas</li>
+                <br>
+                 Para se tornar um profissional em destaque não só no meio empresarial mas em vários setores, atuando com o desenvolvimento pessoal e o recurso humano.
+                 Para ingressar no curso é necessária a conclusão do ensino médio.
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="modal modal-lg fade" id="segTrabalho" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">TÉCNICO EM SEGURANÇA DO TRABALHO</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="textoAdm" style="text-align: justify">
+                O curso técnico em segurança do trabalho vem tomando cada vez mais importância no meio empresarial e industrial <br> 
+                O curso conta com a carga horária de 1340 horas (1 ano e meio), 100% presencial. e traz informações nos seguintes quesitos: 
+                <br><br>
+                <li>Técnicas e Treinamentos</li>
+                <li>Psicologia no trabalho</li>
+                <li>Prevenção de incêndios</li>
+                <li>Legislação ambiental</li>
+                <li>Legislação previdenciária</li>
+                <li>Toxicologia </li>
+                <li>Primeiros socorros</li>
+                <li>Ergonomia</li>
+                <li>Higiene Industrial</li>
+                <br>
+                 O curso conta com programa de Estágio para tornar o profissional de Segurança do Trabalho apto a desenvolver seus conhecimentos no mercado de trabalho amplo e dinâmico.
+                 Para ingressar no curso é necessária a conclusão do ensino médio.
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+    
+    
     </section>
 
     <section>
-        <!-- Sobre Feira -->
-        <div class="card-container">
-            <div class="card" style="width: 100%; background-color: #f8fcf9;" #href=sobreAfeira>
-                <h2 class="card-title"
-                    style="font-size: x-large; font-weight: bold; text-align: center; color: #012340;"> Bem vindo a
-                    feira de profissões </h2>
-                <div class="textoAdm" style="text-align: justify">
-                    <br>
-                    <br>
-                    <h5>
-                        A feira de profissões tem como objetivo apresentar os diversos campos de atuação e seus
-                        respectivos cursos,
-                        expondo a comunidade e as pessoas interessadas algumas das opções de possíveis profissões a
-                        serem seguidas,
-                        para conhecer melhor as áreas do mercado de trabalho.<br>
-                        Neste ambiente você conhecerá mais sobre os cursos disponíveis no CEDUP atualmente, também
-                        conhecerá mais
-                        sobre as suas áreas de atuação.<br>
-                        Agradecemos sua visita e desejamos que a feira estimule ao máximo sua vontade de seguir a
-                        profissão dos sonhos,
-                        sinta se a vontade para adquirir conhecimento e moldar seus conceitos a respeito da vasta
-                        opção de desenvolvimento
-                        em vários setores e consequentemente uma colocação de sucesso no mercado de trabalho.
-                    </h5>
-                    <br>
-                    <br>
-                    <h4 style="text-align: center; font-weight: bold; color: #012340;">Lembre-se... somente você
-                        decide seu futuro!</h4>
-                    <br><br>
-                </div>
+    <!-- Sobre Feira -->
+
+    <div class="card-container">
+        <div class="card" style="width: 100%; background-color: #f8fcf9;" #href=sobreAfeira >
+            <h2 class="card-title" style="font-weight: bold; text-align: center; color: #012340;"> Bem vindo a feira de profissões </h2>
+             <div class="textoAdm" style="text-align: justify">
+                <br>
+                <br>
+                <h5>
+                A feira de profissões tem como objetivo apresentar os diversos campos de atuação e seus respectivos cursos,
+                expondo a comunidade e as pessoas interessadas algumas das opções de possíveis profissões a serem seguidas, 
+                para conhecer melhor as áreas do mercado de trabalho.<br>
+                Neste ambiente você conhecerá mais sobre os cursos disponíveis no CEDUP atualmente, também conhecerá mais
+                sobre as suas áreas de atuação.<br>
+                Agradecemos sua visita e desejamos que a feira estimule ao máximo sua vontade de seguir a profissão dos sonhos,
+                sinta se a vontade para adquirir conhecimento e moldar seus conceitos a respeito da vasta opção de desenvolvimento
+                em vários setores e consequentemente uma colocação de sucesso no mercado de trabalho.
+                </h5>
+                <br>
+                <br>
+                <h4 style="text-align: center; font-weight: bolder; font-size: 48; color: #012340;">Lembre-se... somente você decide seu futuro!</h4>
+                <br>
+                <br>
+                <div class="imagem">
+                 <img src="assets/img/outras imagens/bandeira mafra.png" style ="border: 1px solid #000000; height: 70px; width: 93px;">
+                 <img src="assets/img/outras imagens/brasao mafra.png" style ="height: 70px; width: 93px;">
+                 <img src="assets/img/outras imagens/Bandeira_de_Santa_Catarina.svg.png" style ="border: 1px solid #000000; height: 70px; width: 93px;">
+            </div>
+        </div>   
+     
     </section>
 
     <section>
         <!-- Stands da feira -->
-        <div>
-            <p class="titleMain">STANDS DA FEIRA</p>
-        </div>
-
-
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="card border-dark mb-3" style="max-width: 18rem;">
-                    <div class="card-header">Técnico em Informática</div>
-                    <div class="card-body text-primary">
-                        <h5 class="card-title">TEMA</h5>
-                        <p class="card-text">Sala XX</p>
-                    </div>
+        <div class="container py-5">
+            <div class="main-timeline-4 text-white">
+              <div class="timeline-4 left-4">
+                <div class="card-timeline gradient-custom">
+                  <div class="card-timeline-body p-4">
+                    <i class="fas fa-brain fa-2x mb-3"></i>
+                    <h4>INFORMÁTICA</h4>
+                    <p class="small text-white-50 mb-4">Tecnologia, a arte de conectar ideias</p>
+                    
+                    <h6 class="badge bg-light text-black mb-0">SALA XX</h6>
+                    <h6 class="badge bg-light text-black mb-0">SALA YY</h6>
+                  </div>
                 </div>
-                <div class="card border-dark mb-3" style="max-width: 18rem;">
-                    <div class="card-header">Segurança do trabalho</div>
-                    <div class="card-body text-secondary">
-                        <h5 class="card-title">TEMA</h5>
-                        <p class="card-text">Sala XX</p>
-                    </div>
+              </div>
+              <div class="timeline-4 right-4">
+                <div class="card-timeline gradient-custom-4">
+                  <div class="card-timeline-body p-4">
+                    <i class="fas fa-camera fa-2x mb-3"></i>
+                    <h4>SEGURANÇA DO TRABALHO</h4>
+                    <p class="small text-white-50 mb-4">Métodos seguros para o trabalho</p>
+                    
+                    <h6 class="badge bg-light text-black mb-0">SALA XX</h6>
+                    <h6 class="badge bg-light text-black mb-0">SALA YY</h6>
+                  </div>
                 </div>
-                <div class="card border-dark mb-3" style="max-width: 18rem;">
-                    <div class="card-header">Recursos humanos</div>
-                    <div class="card-body text-success">
-                        <h5 class="card-title">TEMA</h5>
-                        <p class="card-text">Sala XX</p>
-                    </div>
+              </div>
+              <div class="timeline-4 left-4">
+                <div class="card-timeline gradient-custom">
+                  <div class="card-timeline-body p-4">
+                    <i class="fas fa-campground fa-2x mb-3"></i>
+                    <h4>RECURSOS HUMANOS</h4>
+                    <p class="small text-white-50 mb-4">TEMA</p>
+                    
+                    <h6 class="badge bg-light text-black mb-0">SALA XX</h6>
+                    <h6 class="badge bg-light text-black mb-0">SALA YY</h6>
+                  </div>
                 </div>
-                <div class="card border-dark mb-3" style="max-width: 18rem;">
-                    <div class="card-header">Qualidade</div>
-                    <div class="card-body text-danger">
-                        <h5 class="card-title">TEMA</h5>
-                        <p class="card-text">Sala XX</p>
-                    </div>
+              </div>
+              <div class="timeline-4 right-4">
+                <div class="card-timeline gradient-custom-4">
+                  <div class="card-timeline-body p-4">
+                    <i class="fas fa-sun fa-2x mb-3"></i>
+                    <h4>QUALIDADE</h4>
+                    <p class="small text-white-50 mb-4">Gestão da qualidade na linha de produção</p>
+                    
+                    <h6 class="badge bg-light text-black mb-0">SALA XX</h6>
+                    <h6 class="badge bg-light text-black mb-0">SALA YY</h6>
+                  </div>
                 </div>
-                <div class="card border-dark mb-3" style="max-width: 18rem;">
-                    <div class="card-header">Marketing</div>
-                    <div class="card-body text-warning">
-                        <h5 class="card-title">TEMA</h5>
-                        <p class="card-text">Sala XX</p>
-                    </div>
+              </div>
+              <div class="timeline-4 left-4">
+                <div class="card-timeline gradient-custom">
+                  <div class="card-timeline-body p-4">
+                    <i class="fas fa-pizza-slice fa-2x mb-3"></i>
+                    <h4>LOGISTICA</h4>
+                    <p class="small text-white-50 mb-4">TEMA</p>
+                    
+                    <h6 class="badge bg-light text-black mb-0">SALA XX</h6>
+                    <h6 class="badge bg-light text-black mb-0">SALA YY</h6>
+                  </div>
                 </div>
-                <div class="card border-dark mb-3" style="max-width: 18rem;">
-                    <div class="card-header">Enfermagem</div>
-                    <div class="card-body text-info">
-                        <h5 class="card-title">TEMA</h5>
-                        <p class="card-text">Sala XX</p>
-                    </div>
+              </div>
+              <div class="timeline-4 right-4">
+                <div class="card-timeline gradient-custom-4">
+                  <div class="card-timeline-body p-4">
+                    <i class="fas fa-laugh-beam fa-2x mb-3"></i>
+                    <h4>ENFERMAGEM</h4>
+                    <p class="small text-white-50 mb-4">TEMA</p>
+                    
+                    <h6 class="badge bg-light text-black mb-0">SALA XX</h6>
+                    <h6 class="badge bg-light text-black mb-0">SALA YY</h6>
+                  </div>
                 </div>
-                <div class="card border-dark mb-3" style="max-width: 18rem;">
-                    <div class="card-header">Contabilidade</div>
-                    <div class="card-body">
-                        <h5 class="card-title">TEMA</h5>
-                        <p class="card-text">Sala XX</p>
-                    </div>
+              </div>
+              <div class="timeline-4 left-4">
+                <div class="card-timeline gradient-custom">
+                  <div class="card-timeline-body p-4">
+                    <i class="fas fa-pizza-slice fa-2x mb-3"></i>
+                    <h4>CONTABILIDADE</h4>
+                    <p class="small text-white-50 mb-4">TEMA</p>
+                    
+                    <h6 class="badge bg-light text-black mb-0">SALA XX</h6>
+                    <h6 class="badge bg-light text-black mb-0">SALA YY</h6>
+                  </div>
                 </div>
-                <div class="card border-dark mb-3" style="max-width: 18rem;">
-                    <div class="card-header">Administração</div>
-                    <div class="card-body text-dark">
-                        <h5 class="card-title">TEMA</h5>
-                        <p class="card-text">Sala XX</p>
-                    </div>
+              </div>
+              <div class="timeline-4 right-4">
+                <div class="card-timeline gradient-custom-4">
+                  <div class="card-timeline-body p-4">
+                    <i class="fas fa-laugh-beam fa-2x mb-3"></i>
+                    <h4>ADMINISTRAÇÃO</h4>
+                    <p class="small text-white-50 mb-4">Empreendedorismo</p>
+                    
+                    <h6 class="badge bg-light text-black mb-0">SALA XX</h6>
+                    <h6 class="badge bg-light text-black mb-0">SALA YY</h6>
+                  </div>
                 </div>
-                <div class="card border-dark mb-3" style="max-width: 18rem;">
-                    <div class="card-header">Logistica</div>
-                    <div class="card-body text-dark">
-                        <h5 class="card-title">TEMA</h5>
-                        <p class="card-text">Sala XX</p>
-                    </div>
-                </div>
+              </div>
+              
+    
+    
             </div>
-        </div>
+          </div>
 
 
     </section>
 
     <section>
         <!-- Galeria de fotos -->
-
+        <div class="Geral">
+            <div class="card-sobre" style="width: 93%; height: 100px; margin-top: 10px;">
+              <div class="EntreImagem" style="justify-content: space-between ;display: flex;">
+                <div class="logo1"> <img src="assets/img/carrossel/LogoEscola.jpeg" alt="LogoEscola"
+                    style="width: 100px; height: 80px; margin-right: 280px;"></div>
+                <h1 style="font-size: 56; font-weight: bold; text-align: center; color: #012340;"> Conheça nossa área escolar
+                </h1>
+                <div class="logo1"> <img src="assets/img/carrossel/LogoEscola.jpeg" alt="LogoEscola"
+                    style="width: 100px; height: 80px; margin-left: 280px;"></div>
+                  </div>
+                </div>
+              </div>   
+            </div>
+        
+          <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                aria-label="Slide 5"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+                aria-label="Slide 6"></button>  
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"
+                aria-label="Slide 7"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7"
+                aria-label="Slide 8"></button> 
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8"
+                aria-label="Slide 9"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9"
+                aria-label="Slide 10"></button>    
+            </div>
+            <div id="carouselExample" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="assets/img/carrossel/Corredor_cima.jpeg" class= "imagens d-block w-100" alt="100">
+                  <div class="carousel-caption  d-md-block ">
+                    <h5>Corredor de cima</h5>
+                  </div>
+                </div>
+                 <div class="carousel-item">
+                  <img src="assets/img/carrossel/Auditorio.jpeg" class="imagens d-block w-100" alt="100">
+                   <div class="carousel-caption  d-md-block ">
+                     <h5>Auditório</h5>
+                    </div>
+                 </div>
+                 <div class="carousel-item">
+                  <img src="assets/img/carrossel/Estacionamento.jpeg" class="imagens d-block w-100" alt="100">
+                   <div class="carousel-caption  d-md-block ">
+                     <h5>Estacionamento</h5>
+                    </div>
+                 </div>
+                <div class="carousel-item">
+                <img src="assets/img/carrossel/Corredor_baixo.jpeg" class="imagens d-block w-100" alt="100">
+                <div class="carousel-caption  d-md-block ">
+                  <h5>Corredor de baixo</h5>
+                </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/img/carrossel/Laboratório_enfermagem.jpeg" class="imagens d-block w-100" alt="100">
+                  <div class="carousel-caption  d-md-block ">
+                    <h5>Laboratório de Enfermagem</h5>
+                  </div>
+                  </div>
+                  <div class="carousel-item">
+                  <img src="assets/img/carrossel/Sala_segurança.jpeg" class="imagens d-block w-100" alt="100">
+                  <div class="carousel-caption  d-md-block ">
+                    <h5>Sala Turma de Segurança</h5>
+                  </div>
+                  </div>
+                  <div class="carousel-item">
+                  <img src="assets/img/carrossel/Sala_informática.jpeg" class="imagens d-block w-100" alt="100">
+                  <div class="carousel-caption  d-md-block ">
+                     <h5>Sala de Informática</h5>
+                    </div>
+                    </div>
+                  <div class="carousel-item">
+                    <img src="assets/img/carrossel/Sala_convencional.jpeg" class="imagens d-block w-100" alt="100">
+                    <div class="carousel-caption  d-md-block ">
+                       <h5>Sala Convencional</h5>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="assets/img/carrossel/Diretoria.jpeg" class="imagens d-block w-100" alt="100">
+                      <div class="carousel-caption  d-md-block ">
+                         <h5>Diretoria</h5>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="assets/img/carrossel/Cantina.jpeg" class="imagens d-block w-100" alt="100">
+                        <div class="carousel-caption  d-md-block ">
+                           <h5>Cantina</h5>
+                          </div>
+                        </div>  
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden"></span>
+              </button>
+          </div>
+          
+           
+          
+          </div>
+          
     </section>
 
     <section>
@@ -578,7 +938,7 @@
             <p>&copy; 2023 CEDUP</p>
         </div>
     </footer>
-
+    <script src="assets/js/ScrollReveal.js"></script>
     <script src="./assets/js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
