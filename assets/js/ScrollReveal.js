@@ -1,4 +1,4 @@
-window.sr = ScrollReveal({reset: true})
+window.sr = ScrollReveal({reset: false})
 
 ScrollReveal().reveal('.card-timeline', {
     delay: 100,
